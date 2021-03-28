@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600');
+:root {
+    --darkest-color: #081e2c;
+    --dark-color: #05273b;
+    --semi-dark-color: #0a486b;
+    --text-color-1: #65bce4;
+}
+
+html {
+    background-color: var(--dark-color);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--dark-color);
+}
+
+a {
+    color:brown;
+}
+
+.logo {
+    width: 30%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.hide-nav-mobile {
+    display: none;
+}
+
+.hamburger-menu {
+    margin-top: 1%;
+    float: right;
+    width: 20%;
+    background-color: var(--dark-color);
+}
+
+.hide-mobile-menu-icon {
+    width: 20%;
+    height: 20%;
+    margin-bottom: 5%;
+}
+
+nav ul {
+    position: fixed;
+    width: 40%;
+    top: 0;
+    right: 0;
+    text-align: left;
+    padding-left: 5%;
+    background: var(--darkest-color);
+    height: 100%;
+}
+
+nav ul li a {
+    color: var(--text-color-1);
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding-bottom: 5%;
+    background-color: var(--darkest-color);
+}
+
+nav ul li a:hover {
+    background: inherit;
+}
+
+.footer {
+    background-color: var(--darkest-color);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+@media only screen and (min-width: 1024px) {
+    nav ul {
+        position: inherit;
+        width: 100%;
+        background: none;
+        display: flex;
+        padding-top: 0;
+    }
+
+    nav ul li {
+        float: left;
+    }
+
+    nav ul li a {
+        color: var(--text-color-1);
+        text-decoration: none;
+        background: inherit;
+        text-align: right;
+        width: 60%;
+        padding: 1em 2em;
+    }
+
+    nav ul li a:hover {
+        background: inherit;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    .hide-nav-pc {
+        display: none;
+    }
+
+    .show-nav-pc {
+        margin: 0 auto 10% auto;
+        display: block;
+    }
+}
