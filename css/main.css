@@ -6,10 +6,12 @@
     --text-color-1: #65bce4;
     --text-color-2: #94d6f5;
     --hyperlink-color: #439467;
+    --h2-font-size: 1.25rem;
 }
 
 html {
     background-color: var(--dark-color);
+    overflow-x: hidden;
 }
 
 body {
