@@ -49,6 +49,89 @@ em.star.second {
     -webkit-transform-origin: -10vmin 2vmin;
     transform-origin: -10vmin 2vmin;
 }
+
+.whatWeDoTitle {
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    
+}
+
+.section-title {
+    position: relative;
+    font-size: var(--h2-font-size);
+    color: var(--text-color-1);
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', cursive;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+.whatWeDoContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1rem;
+    padding: 1rem 80px;
+    font-size: 1.2rem;
+}
+
+.whatWeDoBox {
+    padding: 1rem;
+    color: #9cd9f9;
+}
+
+.whatWeDoBox:hover>.whatWeDoTitle:after,
+.whatWeDoBox:hover>.whatWeDoTitle:before {
+    width: 35px;
+}
+
+.whatWeDoBox:hover .whatWeDoImg {
+    transform: translateY(-10px);
+}
+
+.whatWeDoImg {
+    width: 90px;
+    height: 90px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.whatWeDoBoxTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.whatWeDoDescription {
+    text-transform: none;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 990px) {
+    .whatWeDoContainer {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem 50px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .whatWeDoContainer {
+        grid-template-columns: 1fr;
+    }
+}
+
   
 @-webkit-keyframes star-rotate {
     to {
@@ -66,5 +149,15 @@ em.star.second {
     .main-banner {
         padding-top: 20%;
         padding-bottom: 20%;
+    }
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 20px #2d9da9;
+    }
+
+    to {
+        text-shadow: 0 0 30px #34b3c1, 0 0 10px #4dbbc7;
     }
 }
