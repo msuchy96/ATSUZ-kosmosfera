@@ -4,6 +4,7 @@
     --dark-color: #05273b;
     --semi-dark-color: #0a486b;
     --text-color-1: #65bce4;
+    --hyperlink-color: #439467;
 }
 
 html {
@@ -21,7 +22,7 @@ header {
 }
 
 a {
-    color:brown;
+    color: var(--hyperlink-color);
 }
 
 .logo {
@@ -51,7 +52,7 @@ ul {
 
 nav ul {
     position: fixed;
-    width: 40%;
+    width: 42%;
     top: 0;
     right: 0;
     text-align: left;
@@ -78,6 +79,10 @@ nav ul li a:hover {
     color: #fff;
     text-align: center;
     padding: 2rem 0;
+}
+
+.footer-urls {
+    margin: 0 auto;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -107,7 +112,7 @@ nav ul li a:hover {
     }
 
     .logo {
-        width: 150px;
+        width: 80px;
     }
 
     .hide-nav-pc {
