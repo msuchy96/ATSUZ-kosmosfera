@@ -24,6 +24,10 @@ header {
     background-color: var(--dark-color);
 }
 
+.name-header {
+    display: none;
+}
+
 a {
     color: var(--hyperlink-color);
 }
@@ -95,6 +99,11 @@ nav ul li a:hover {
 
     .footer {
         font-size: .8vmax;
+    }
+
+    .name-header {
+        display: flex;
+        color: var(--text-color-2);
     }
 
     nav ul {
