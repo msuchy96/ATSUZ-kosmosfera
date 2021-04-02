@@ -14,6 +14,18 @@ html {
     overflow-x: hidden;
 }
 
+.section-title {
+    position: relative;
+    font-size: var(--h2-font-size);
+    color: var(--text-color-1);
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', cursive;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -22,6 +34,10 @@ header {
     display: flex;
     justify-content: space-between;
     background-color: var(--dark-color);
+}
+
+.name-header {
+    display: none;
 }
 
 a {
@@ -95,6 +111,11 @@ nav ul li a:hover {
 
     .footer {
         font-size: .8vmax;
+    }
+
+    .name-header {
+        display: flex;
+        color: var(--text-color-2);
     }
 
     nav ul {
