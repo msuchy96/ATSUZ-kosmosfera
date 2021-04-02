@@ -14,6 +14,18 @@ html {
     overflow-x: hidden;
 }
 
+.section-title {
+    position: relative;
+    font-size: var(--h2-font-size);
+    color: var(--text-color-1);
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', cursive;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
