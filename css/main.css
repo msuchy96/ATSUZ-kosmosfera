@@ -6,7 +6,7 @@
     --text-color-1: #65bce4;
     --text-color-2: #94d6f5;
     --hyperlink-color: #439467;
-    --h2-font-size: 1.25rem;
+    --h2-font-size: 1.5rem;
 }
 
 html {
@@ -18,8 +18,8 @@ html {
     position: relative;
     font-size: var(--h2-font-size);
     color: var(--text-color-1);
-    margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin-top: 5%;
+    margin-bottom: 5%;
     text-align: center;
     text-transform: uppercase;
     font-family: 'Montserrat', cursive;
