@@ -89,7 +89,7 @@
 }
 
 .about-description {
-    color: white;
+    color: var(--text-color-3);
     margin: 2% 2% 2% 2%;
     text-align: justify;
     width: auto;
