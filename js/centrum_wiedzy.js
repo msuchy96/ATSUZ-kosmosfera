@@ -1,5 +1,5 @@
 var category_cookie = getCookie('category');
-filterSelection(getCookie(category_cookie))
+filterSelection(getCookie(category_cookie));
 var btnContainer = document.getElementById("buttonContainer");
 var btns = btnContainer.getElementsByClassName("btn");
 var curBtn = document.getElementById(category_cookie);
@@ -10,10 +10,6 @@ for (var i = 0; i < btns.length; i++) {
     var current = document.getElementsByClassName("active");
     current[0].className = current[0].className.replace(" active", "");
     this.className += " active";
-    console.log('Test0: ' + this.className);
-    console.log('Test0.1: ' + this);
-    console.log('Test1: ' + this.id);
-    setCookie('category', this.id, 1);
   });
 }
 
@@ -21,7 +17,7 @@ for (var i = 0; i < btns.length; i++) {
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("knowledge-element");
-  if (c == "btn-all") c = "";
+  if (c == "all") c = "";
   for (i = 0; i < x.length; i++) {
     removeClass(x[i], "show");
     removeClass(x[i], "hide");
@@ -39,7 +35,7 @@ function getCookie(name) {
       while (c.charAt(0)==' ') c = c.substring(1,c.length);
       if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
   }
-  return "btn-all";
+  return "all";
 }
 
 function setCookie(name,value,days) {
