@@ -1,8 +1,8 @@
 var category_cookie = getCookie('category');
-filterSelection(getCookie(category_cookie))
+filterSelection(category_cookie);
 var btnContainer = document.getElementById("buttonContainer");
 var btns = btnContainer.getElementsByClassName("btn");
-var curBtn = document.getElementById("btn-"+category_cookie);
+var curBtn = document.getElementById(category_cookie);
 curBtn.className += " active";
 
 for (var i = 0; i < btns.length; i++) {
