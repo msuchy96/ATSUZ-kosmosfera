@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,10 +11,11 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/centrum_wiedzy.css">
 </head>
+
 <body>
     <header>
         <a class href="index.html">
-            <img src="resources/cosmo-logo.png" alt="Logo Kosmosfera" class="logo"> 
+            <img src="resources/cosmo-logo.png" alt="Logo Kosmosfera" class="logo">
         </a>
         <div class="name-header">
             <h2> K O S M O S F E R A </h2>
@@ -34,33 +36,639 @@
             </ul>
         </nav>
     </header>
-    
-    <!-- Control buttons -->
-<div id="myBtnContainer">
-    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-    <button class="btn" onclick="filterSelection('cars')"> Cars</button>
-    <button class="btn" onclick="filterSelection('animals')"> Animals</button>
-    <button class="btn" onclick="filterSelection('fruits')"> Fruits</button>
-    <button class="btn" onclick="filterSelection('colors')"> Colors</button>
-  </div>
-  
-  <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
-  <div class="container">
-    <div class="filterDiv cars">BMW</div>
-    <div class="filterDiv colors fruits">Orange</div>
-    <div class="filterDiv cars">Volvo</div>
-    <div class="filterDiv colors">Red</div>
-    <div class="filterDiv cars animals">Mustang</div>
-    <div class="filterDiv colors">Blue</div>
-    <div class="filterDiv animals">Cat</div>
-    <div class="filterDiv animals">Dog</div>
-    <div class="filterDiv fruits">Melon</div>
-    <div class="filterDiv fruits animals">Kiwi</div>
-    <div class="filterDiv fruits">Banana</div>
-    <div class="filterDiv fruits">Lemon</div>
-    <div class="filterDiv animals">Cow</div>
-  </div>
-    
+
+    <section id="knowledge_center">
+        <h2 class="section-title">Cetrum wiedzy:</h2>
+        <div id="buttonContainer" class="button-container">
+            <button class="btn active" onclick="filterSelection('all')">Pokaż wszystkie</button>
+            <button class="btn" onclick="filterSelection('planet')">Planety</button>
+            <button class="btn" onclick="filterSelection('satelite')">Satelity</button>
+            <button class="btn" onclick="filterSelection('galaxy')">Galaktyki</button>
+            <button class="btn" onclick="filterSelection('space-shuttle')">Wahadłowce</button>
+        </div>
+        <div class="knowledge-elements">
+            <div class="knowledge-element planet">
+                <div class="knowledge-element-logo">
+                    <img src="resources/knowledge/planet.svg" alt="Ikona planety" class="category_logo">
+                </div>
+                <div class="knowledge-element-desc">
+                    <div class="knowledge-element-type">
+                        <em>Typ:</em> Planeta
+                    </div>
+                    <div class="knowledge-element-name">
+                        <em>Nazwa:</em> Mars
+                    </div></br>
+                    <div class="knowledge-element-button">
+                        <a href="strona_w_budowie.html" target="_blank">Więcej informacji</a>
+                    </div>
+                </div>
+                <div class="break"></div>
+                <div class="knowledge-element-img">
+                    <img src="resources/knowledge/planets/mars.jpg" alt="Zdjęcie planety" class="photo">
+                </div>
+            </div>
+            <div class="knowledge-element space-shuttle">
+                <div class="knowledge-element-logo">
+                    <img src="resources/knowledge/space-shuttle.svg" alt="Ikona Wahadłowca" class="category_logo">
+                </div>
+                <div class="knowledge-element-desc">
+                    <div class="knowledge-element-type">
+                        <em>Typ:</em> Wahadłowiec
+                    </div>
+                    <div class="knowledge-element-name">
+                        <em>Nazwa:</em> Endeavour
+                    </div></br>
+                    <div class="knowledge-element-button">
+                        <a href="strona_w_budowie.html" target="_blank">Więcej informacji</a>
+                    </div>
+                </div>
+                <div class="break"></div>
+                <div class="knowledge-element-img">
+                    <img src="resources/knowledge/space-shutters/Endeavour.jpg" alt="Zdjęcie wahadłowca" class="photo">
+                </div>
+            </div>
+            <div class="knowledge-element satelite">
+                <div class="knowledge-element-logo">
+                    <img src="resources/knowledge/satelite.svg" alt="Ikona satelity" class="category_logo">
+                </div>
+                <div class="knowledge-element-desc">
+                    <div class="knowledge-element-type">
+                        <em>Typ:</em> Satelita
+                    </div>
+                    <div class="knowledge-element-name">
+                        <em>Nazwa:</em> SERT 2
+                    </div></br>
+                    <div class="knowledge-element-button">
+                        <a href="strona_w_budowie.html" target="_blank">Więcej informacji</a>
+                    </div>
+                </div>
+                <div class="break"></div>
+                <div class="knowledge-element-img">
+                    <img src="resources/knowledge/satelites/satelite1.jpg" alt="Zdjęcie satelity" class="photo">
+                </div>
+            </div>
+            <div class="knowledge-element planet">
+                <div class="knowledge-element-logo">
+                    <img src="resources/knowledge/planet.svg" alt="Ikona planety" class="category_logo">
+                </div>
+                <div class="knowledge-element-desc">
+                    <div class="knowledge-element-type">
+                        <em>Typ:</em> Planeta
+                    </div>
+                    <div class="knowledge-element-name">
+                        <em>Nazwa:</em> Saturn
+                    </div></br>
+                    <div class="knowledge-element-button">
+                        <a href="strona_w_budowie.html" target="_blank">Więcej informacji</a>
+                    </div>
+                </div>
+                <div class="break"></div>
+                <div class="knowledge-element-img">
+                    <img src="resources/knowledge/planets/Saturn.jpg" alt="Zdjęcie planety" class="photo">
+                </div>
+            </div>
+            <div class="knowledge-element galaxy">
+                <div class="knowledge-element-logo">
+                    <img src="resources/knowledge/galaxy.svg" alt="Ikona galaktyki" class="category_logo">
+                </div>
+                <div class="knowledge-element-desc">
+                    <div class="knowledge-element-type">
+                        <em>Typ:</em> Galaktyka
+                    </div>
+                    <div class="knowledge-element-name">
+                        <em>Nazwa:</em> Andromeda
+                    </div></br>
+                    <div class="knowledge-element-button">
+                        <a href="strona_w_budowie.html" target="_blank">Więcej informacji</a>
+                    </div>
+                </div>
+                <div class="break"></div>
+                <div class="knowledge-element-img">
+                    <img src="resources/knowledge/galaxies/Andromeda.jpg" alt="Zdjęcie galaktyki" class="photo">
+                </div>
+            </div>
+            <div class="knowledge-element satelite">
+                <div class="knowledge-element-logo">
+                    <img src="resources/knowledge/satelite.svg" alt="Ikona satelity" class="category_logo">
+                </div>
+                <div class="knowledge-element-desc">
+                    <div class="knowledge-element-type">
+                        <em>Typ:</em> Satelita
+                    </div>
+                    <div class="knowledge-element-name">
+                        <em>Nazwa:</em> Galileo
+                    </div></br>
+                    <div class="knowledge-element-button">
+                        <a href="strona_w_budowie.html" target="_blank">Więcej informacji</a>
+                    </div>
+                </div>
+                <div class="break"></div>
+                <div class="knowledge-element-img">
+                    <img src="resources/knowledge/satelites/satelite2.jpg" alt="Zdjęcie satelity" class="photo">
+                </div>
+            </div>
+            <div class="knowledge-element space-shuttle">
+                <div class="knowledge-element-logo">
+                    <img src="resources/knowledge/space-shuttle.svg" alt="Ikona Wahadłowca" class="category_logo">
+                </div>
+                <div class="knowledge-element-desc">
+                    <div class="knowledge-element-type">
+                        <em>Typ:</em> Wahadłowiec
+                    </div>
+                    <div class="knowledge-element-name">
+                        <em>Nazwa:</em> Challenger
+                    </div></br>
+                    <div class="knowledge-element-button">
+                        <a href="strona_w_budowie.html" target="_blank">Więcej informacji</a>
+                    </div>
+                </div>
+                <div class="break"></div>
+                <div class="knowledge-element-img">
+                    <img src="resources/knowledge/space-shutters/Challenger.jpg" alt="Zdjęcie wahadłowca" class="photo">
+                </div>
+            </div>
+            <div class="knowledge-element planet">
+                <div class="knowledge-element-logo">
+                    <img src="resources/knowledge/planet.svg" alt="Ikona planety" class="category_logo">
+                </div>
+                <div class="knowledge-element-desc">
+                    <div class="knowledge-element-type">
+                        <em>Typ:</em> Planeta
+                    </div>
+                    <div class="knowledge-element-name">
+                        <em>Nazwa:</em> Merkury
+                    </div></br>
+                    <div class="knowledge-element-button">
+                        <a href="strona_w_budowie.html" target="_blank">Więcej informacji</a>
+                    </div>
+                </div>
+                <div class="break"></div>
+                <div class="knowledge-element-img">
+                    <img src="resources/knowledge/planets/mercury.jpg" alt="Logo Kosmosfera" class="photo">
+                </div>
+            </div>
+            <div class="knowledge-element galaxy">
+                <div class="knowledge-element-logo">
+                    <img src="resources/knowledge/galaxy.svg" alt="Ikona galaktyki" class="category_logo">
+                </div>
+                <div class="knowledge-element-desc">
+                    <div class="knowledge-element-type">
+                        <em>Typ:</em> Galaktyka
+                    </div>
+                    <div class="knowledge-element-name">
+                        <em>Nazwa:</em> Droga mleczna
+                    </div></br>
+                    <div class="knowledge-element-button">
+                        <a href="strona_w_budowie.html" target="_blank">Więcej informacji</a>
+                    </div>
+                </div>
+                <div class="break"></div>
+                <div class="knowledge-element-img">
+                    <img src="resources/knowledge/galaxies/milky-way.jpg" alt="Zdjęcie galaktyki" class="photo">
+                </div>
+            </div>
+            <div class="knowledge-element space-shuttle">
+                <div class="knowledge-element-logo">
+                    <img src="resources/knowledge/space-shuttle.svg" alt="Ikona Wahadłowca" class="category_logo">
+                </div>
+                <div class="knowledge-element-desc">
+                    <div class="knowledge-element-type">
+                        <em>Typ:</em> Wahadłowiec
+                    </div>
+                    <div class="knowledge-element-name">
+                        <em>Nazwa:</em> Falcon Heavy
+                    </div></br>
+                    <div class="knowledge-element-button">
+                        <a href="strona_w_budowie.html" target="_blank">Więcej informacji</a>
+                    </div>
+                </div>
+                <div class="break"></div>
+                <div class="knowledge-element-img">
+                    <img src="resources/knowledge/space-shutters/Falcon-Heavy.jpg" alt="Zdjęcie wahadłowca" class="photo">
+                </div>
+            </div>
+            <div class="knowledge-element planet">
+                <div class="knowledge-element-logo">
+                    <img src="resources/knowledge/planet.svg" alt="Ikona planety" class="category_logo">
+                </div>
+                <div class="knowledge-element-desc">
+                    <div class="knowledge-element-type">
+                        <em>Typ:</em> Planeta
+                    </div>
+                    <div class="knowledge-element-name">
+                        <em>Nazwa:</em> Wenus
+                    </div></br>
+                    <div class="knowledge-element-button">
+                        <a href="strona_w_budowie.html" target="_blank">Więcej informacji</a>
+                    </div>
+                </div>
+                <div class="break"></div>
+                <div class="knowledge-element-img">
+                    <img src="resources/knowledge/planets/venus.jpg" alt="Zdjęcie planety" class="photo">
+                </div>
+            </div>
+            <div class="knowledge-element satelite">
+                <div class="knowledge-element-logo">
+                    <img src="resources/knowledge/satelite.svg" alt="Ikona satelity" class="category_logo">
+                </div>
+                <div class="knowledge-element-desc">
+                    <div class="knowledge-element-type">
+                        <em>Typ:</em> Satelita
+                    </div>
+                    <div class="knowledge-element-name">
+                        <em>Nazwa:</em> Explorer 1
+                    </div></br>
+                    <div class="knowledge-element-button">
+                        <a href="strona_w_budowie.html" target="_blank">Więcej informacji</a>
+                    </div>
+                </div>
+                <div class="break"></div>
+                <div class="knowledge-element-img">
+                    <img src="resources/knowledge/satelites/satelite3.jpg" alt="Zdjęcie satelity" class="photo">
+                </div>
+            </div>
+            <div class="knowledge-element galaxy">
+                <div class="knowledge-element-logo">
+                    <img src="resources/knowledge/galaxy.svg" alt="Ikona galaktyki" class="category_logo">
+                </div>
+                <div class="knowledge-element-desc">
+                    <div class="knowledge-element-type">
+                        <em>Typ:</em> Galaktyka
+                    </div>
+                    <div class="knowledge-element-name">
+                        <em>Nazwa:</em> Lorel Ipsum
+                    </div></br>
+                    <div class="knowledge-element-button">
+                        <a href="strona_w_budowie.html" target="_blank">Więcej informacji</a>
+                    </div>
+                </div>
+                <div class="break"></div>
+                <div class="knowledge-element-img">
+                    <img src="resources/knowledge/galaxies/placeholder-galaxy.jpg" alt="Zdjęcie galaktyki" class="photo">
+                </div>
+            </div>
+            <div class="knowledge-element satelite">
+                <div class="knowledge-element-logo">
+                    <img src="resources/knowledge/satelite.svg" alt="Ikona satelity" class="category_logo">
+                </div>
+                <div class="knowledge-element-desc">
+                    <div class="knowledge-element-type">
+                        <em>Typ:</em> Satelita
+                    </div>
+                    <div class="knowledge-element-name">
+                        <em>Nazwa:</em> Lorel Ipsum
+                    </div></br>
+                    <div class="knowledge-element-button">
+                        <a href="strona_w_budowie.html" target="_blank">Więcej informacji</a>
+                    </div>
+                </div>
+                <div class="break"></div>
+                <div class="knowledge-element-img">
+                    <img src="resources/knowledge/satelites/satelite-placeholder.jpg" alt="Zdjęcie satelity" class="photo">
+                </div>
+            </div>
+            <div class="knowledge-element space-shuttle">
+                <div class="knowledge-element-logo">
+                    <img src="resources/knowledge/space-shuttle.svg" alt="Ikona Wahadłowca" class="category_logo">
+                </div>
+                <div class="knowledge-element-desc">
+                    <div class="knowledge-element-type">
+                        <em>Typ:</em> Wahadłowiec
+                    </div>
+                    <div class="knowledge-element-name">
+                        <em>Nazwa:</em> Lorel Ipsum
+                    </div></br>
+                    <div class="knowledge-element-button">
+                        <a href="strona_w_budowie.html" target="_blank">Więcej informacji</a>
+                    </div>
+                </div>
+                <div class="break"></div>
+                <div class="knowledge-element-img">
+                    <img src="resources/knowledge/space-shutters/space-shutter-placeholder.jpg" alt="Zdjęcie wahadłowca" class="photo">
+                </div>
+            </div>
+            <div class="knowledge-element planet">
+                <div class="knowledge-element-logo">
+                    <img src="resources/knowledge/planet.svg" alt="Ikona planety" class="category_logo">
+                </div>
+                <div class="knowledge-element-desc">
+                    <div class="knowledge-element-type">
+                        <em>Typ:</em> Planeta
+                    </div>
+                    <div class="knowledge-element-name">
+                        <em>Nazwa:</em> Lorel Ipsum
+                    </div></br>
+                    <div class="knowledge-element-button">
+                        <a href="strona_w_budowie.html" target="_blank">Więcej informacji</a>
+                    </div>
+                </div>
+                <div class="break"></div>
+                <div class="knowledge-element-img">
+                    <img src="resources/knowledge/planets/panet-placeholder.jpg" alt="Zdjęcie planety" class="photo">
+                </div>
+            </div>
+            <div class="knowledge-element galaxy">
+                <div class="knowledge-element-logo">
+                    <img src="resources/knowledge/galaxy.svg" alt="Ikona galaktyki" class="category_logo">
+                </div>
+                <div class="knowledge-element-desc">
+                    <div class="knowledge-element-type">
+                        <em>Typ:</em> Galaktyka
+                    </div>
+                    <div class="knowledge-element-name">
+                        <em>Nazwa:</em> Lorel Ipsum
+                    </div></br>
+                    <div class="knowledge-element-button">
+                        <a href="strona_w_budowie.html" target="_blank">Więcej informacji</a>
+                    </div>
+                </div>
+                <div class="break"></div>
+                <div class="knowledge-element-img">
+                    <img src="resources/knowledge/galaxies/placeholder-galaxy.jpg" alt="Zdjęcie galaktyki" class="photo">
+                </div>
+            </div>
+            <div class="knowledge-element planet">
+                <div class="knowledge-element-logo">
+                    <img src="resources/knowledge/planet.svg" alt="Ikona planety" class="category_logo">
+                </div>
+                <div class="knowledge-element-desc">
+                    <div class="knowledge-element-type">
+                        <em>Typ:</em> Planeta
+                    </div>
+                    <div class="knowledge-element-name">
+                        <em>Nazwa:</em> Lorel Ipsum
+                    </div></br>
+                    <div class="knowledge-element-button">
+                        <a href="strona_w_budowie.html" target="_blank">Więcej informacji</a>
+                    </div>
+                </div>
+                <div class="break"></div>
+                <div class="knowledge-element-img">
+                    <img src="resources/knowledge/planets/panet-placeholder.jpg" alt="Zdjęcie planety" class="photo">
+                </div>
+            </div>
+            <div class="knowledge-element satelite">
+                <div class="knowledge-element-logo">
+                    <img src="resources/knowledge/satelite.svg" alt="Ikona satelity" class="category_logo">
+                </div>
+                <div class="knowledge-element-desc">
+                    <div class="knowledge-element-type">
+                        <em>Typ:</em> Satelita
+                    </div>
+                    <div class="knowledge-element-name">
+                        <em>Nazwa:</em> Lorel Ipsum
+                    </div></br>
+                    <div class="knowledge-element-button">
+                        <a href="strona_w_budowie.html" target="_blank">Więcej informacji</a>
+                    </div>
+                </div>
+                <div class="break"></div>
+                <div class="knowledge-element-img">
+                    <img src="resources/knowledge/satelites/satelite-placeholder.jpg" alt="Zdjęcie satelity" class="photo">
+                </div>
+            </div>
+            <div class="knowledge-element planet">
+                <div class="knowledge-element-logo">
+                    <img src="resources/knowledge/planet.svg" alt="Ikona planety" class="category_logo">
+                </div>
+                <div class="knowledge-element-desc">
+                    <div class="knowledge-element-type">
+                        <em>Typ:</em> Planeta
+                    </div>
+                    <div class="knowledge-element-name">
+                        <em>Nazwa:</em> Lorel Ipsum
+                    </div></br>
+                    <div class="knowledge-element-button">
+                        <a href="strona_w_budowie.html" target="_blank">Więcej informacji</a>
+                    </div>
+                </div>
+                <div class="break"></div>
+                <div class="knowledge-element-img">
+                    <img src="resources/knowledge/planets/panet-placeholder.jpg" alt="Zdjęcie planety" class="photo">
+                </div>
+            </div>
+            <div class="knowledge-element planet">
+                <div class="knowledge-element-logo">
+                    <img src="resources/knowledge/planet.svg" alt="Ikona planety" class="category_logo">
+                </div>
+                <div class="knowledge-element-desc">
+                    <div class="knowledge-element-type">
+                        <em>Typ:</em> Planeta
+                    </div>
+                    <div class="knowledge-element-name">
+                        <em>Nazwa:</em> Lorel Ipsum
+                    </div></br>
+                    <div class="knowledge-element-button">
+                        <a href="strona_w_budowie.html" target="_blank">Więcej informacji</a>
+                    </div>
+                </div>
+                <div class="break"></div>
+                <div class="knowledge-element-img">
+                    <img src="resources/knowledge/planets/panet-placeholder.jpg" alt="Zdjęcie planety" class="photo">
+                </div>
+            </div>
+            <div class="knowledge-element space-shuttle">
+                <div class="knowledge-element-logo">
+                    <img src="resources/knowledge/space-shuttle.svg" alt="Ikona Wahadłowca" class="category_logo">
+                </div>
+                <div class="knowledge-element-desc">
+                    <div class="knowledge-element-type">
+                        <em>Typ:</em> Wahadłowiec
+                    </div>
+                    <div class="knowledge-element-name">
+                        <em>Nazwa:</em> Lorel Ipsum
+                    </div></br>
+                    <div class="knowledge-element-button">
+                        <a href="strona_w_budowie.html" target="_blank">Więcej informacji</a>
+                    </div>
+                </div>
+                <div class="break"></div>
+                <div class="knowledge-element-img">
+                    <img src="resources/knowledge/space-shutters/space-shutter-placeholder.jpg" alt="Zdjęcie wahadłowca" class="photo">
+                </div>
+            </div>
+            <div class="knowledge-element galaxy">
+                <div class="knowledge-element-logo">
+                    <img src="resources/knowledge/galaxy.svg" alt="Ikona galaktyki" class="category_logo">
+                </div>
+                <div class="knowledge-element-desc">
+                    <div class="knowledge-element-type">
+                        <em>Typ:</em> Galaktyka
+                    </div>
+                    <div class="knowledge-element-name">
+                        <em>Nazwa:</em> Lorel Ipsum
+                    </div></br>
+                    <div class="knowledge-element-button">
+                        <a href="strona_w_budowie.html" target="_blank">Więcej informacji</a>
+                    </div>
+                </div>
+                <div class="break"></div>
+                <div class="knowledge-element-img">
+                    <img src="resources/knowledge/galaxies/placeholder-galaxy.jpg" alt="Zdjęcie galaktyki" class="photo">
+                </div>
+            </div>
+            <div class="knowledge-element satelite">
+                <div class="knowledge-element-logo">
+                    <img src="resources/knowledge/satelite.svg" alt="Ikona satelity" class="category_logo">
+                </div>
+                <div class="knowledge-element-desc">
+                    <div class="knowledge-element-type">
+                        <em>Typ:</em> Satelita
+                    </div>
+                    <div class="knowledge-element-name">
+                        <em>Nazwa:</em> Lorel Ipsum
+                    </div></br>
+                    <div class="knowledge-element-button">
+                        <a href="strona_w_budowie.html" target="_blank">Więcej informacji</a>
+                    </div>
+                </div>
+                <div class="break"></div>
+                <div class="knowledge-element-img">
+                    <img src="resources/knowledge/satelites/satelite-placeholder.jpg" alt="Zdjęcie satelity" class="photo">
+                </div>
+            </div>
+            <div class="knowledge-element planet">
+                <div class="knowledge-element-logo">
+                    <img src="resources/knowledge/planet.svg" alt="Ikona planety" class="category_logo">
+                </div>
+                <div class="knowledge-element-desc">
+                    <div class="knowledge-element-type">
+                        <em>Typ:</em> Planeta
+                    </div>
+                    <div class="knowledge-element-name">
+                        <em>Nazwa:</em> Lorel Ipsum
+                    </div></br>
+                    <div class="knowledge-element-button">
+                        <a href="strona_w_budowie.html" target="_blank">Więcej informacji</a>
+                    </div>
+                </div>
+                <div class="break"></div>
+                <div class="knowledge-element-img">
+                    <img src="resources/knowledge/planets/panet-placeholder.jpg" alt="Zdjęcie planety" class="photo">
+                </div>
+            </div>
+            <div class="knowledge-element space-shuttle">
+                <div class="knowledge-element-logo">
+                    <img src="resources/knowledge/space-shuttle.svg" alt="Ikona Wahadłowca" class="category_logo">
+                </div>
+                <div class="knowledge-element-desc">
+                    <div class="knowledge-element-type">
+                        <em>Typ:</em> Wahadłowiec
+                    </div>
+                    <div class="knowledge-element-name">
+                        <em>Nazwa:</em> Lorel Ipsum
+                    </div></br>
+                    <div class="knowledge-element-button">
+                        <a href="strona_w_budowie.html" target="_blank">Więcej informacji</a>
+                    </div>
+                </div>
+                <div class="break"></div>
+                <div class="knowledge-element-img">
+                    <img src="resources/knowledge/space-shutters/space-shutter-placeholder.jpg" alt="Zdjęcie wahadłowca" class="photo">
+                </div>
+            </div>
+            <div class="knowledge-element satelite">
+                <div class="knowledge-element-logo">
+                    <img src="resources/knowledge/satelite.svg" alt="Ikona satelity" class="category_logo">
+                </div>
+                <div class="knowledge-element-desc">
+                    <div class="knowledge-element-type">
+                        <em>Typ:</em> Satelita
+                    </div>
+                    <div class="knowledge-element-name">
+                        <em>Nazwa:</em> Lorel Ipsum
+                    </div></br>
+                    <div class="knowledge-element-button">
+                        <a href="strona_w_budowie.html" target="_blank">Więcej informacji</a>
+                    </div>
+                </div>
+                <div class="break"></div>
+                <div class="knowledge-element-img">
+                    <img src="resources/knowledge/satelites/satelite-placeholder.jpg" alt="Zdjęcie satelity" class="photo">
+                </div>
+            </div>
+            <div class="knowledge-element planet">
+                <div class="knowledge-element-logo">
+                    <img src="resources/knowledge/planet.svg" alt="Ikona planety" class="category_logo">
+                </div>
+                <div class="knowledge-element-desc">
+                    <div class="knowledge-element-type">
+                        <em>Typ:</em> Planeta
+                    </div>
+                    <div class="knowledge-element-name">
+                        <em>Nazwa:</em> Lorel Ipsum
+                    </div></br>
+                    <div class="knowledge-element-button">
+                        <a href="strona_w_budowie.html" target="_blank">Więcej informacji</a>
+                    </div>
+                </div>
+                <div class="break"></div>
+                <div class="knowledge-element-img">
+                    <img src="resources/knowledge/planets/panet-placeholder.jpg" alt="Zdjęcie planety" class="photo">
+                </div>
+            </div>
+            <div class="knowledge-element galaxy">
+                <div class="knowledge-element-logo">
+                    <img src="resources/knowledge/galaxy.svg" alt="Ikona galaktyki" class="category_logo">
+                </div>
+                <div class="knowledge-element-desc">
+                    <div class="knowledge-element-type">
+                        <em>Typ:</em> Galaktyka
+                    </div>
+                    <div class="knowledge-element-name">
+                        <em>Nazwa:</em> Lorel Ipsum
+                    </div></br>
+                    <div class="knowledge-element-button">
+                        <a href="strona_w_budowie.html" target="_blank">Więcej informacji</a>
+                    </div>
+                </div>
+                <div class="break"></div>
+                <div class="knowledge-element-img">
+                    <img src="resources/knowledge/galaxies/placeholder-galaxy.jpg" alt="Zdjęcie galaktyki" class="photo">
+                </div>
+            </div>
+            <div class="knowledge-element satelite">
+                <div class="knowledge-element-logo">
+                    <img src="resources/knowledge/satelite.svg" alt="Ikona satelity" class="category_logo">
+                </div>
+                <div class="knowledge-element-desc">
+                    <div class="knowledge-element-type">
+                        <em>Typ:</em> Satelita
+                    </div>
+                    <div class="knowledge-element-name">
+                        <em>Nazwa:</em> Lorel Ipsum
+                    </div></br>
+                    <div class="knowledge-element-button">
+                        <a href="strona_w_budowie.html" target="_blank">Więcej informacji</a>
+                    </div>
+                </div>
+                <div class="break"></div>
+                <div class="knowledge-element-img">
+                    <img src="resources/knowledge/satelites/satelite-placeholder.jpg" alt="Zdjęcie satelity" class="photo">
+                </div>
+            </div>
+            <div class="knowledge-element space-shuttle">
+                <div class="knowledge-element-logo">
+                    <img src="resources/knowledge/space-shuttle.svg" alt="Ikona Wahadłowca" class="category_logo">
+                </div>
+                <div class="knowledge-element-desc">
+                    <div class="knowledge-element-type">
+                        <em>Typ:</em> Wahadłowiec
+                    </div>
+                    <div class="knowledge-element-name">
+                        <em>Nazwa:</em> Lorel Ipsum
+                    </div></br>
+                    <div class="knowledge-element-button">
+                        <a href="strona_w_budowie.html" target="_blank">Więcej informacji</a>
+                    </div>
+                </div>
+                <div class="break"></div>
+                <div class="knowledge-element-img">
+                    <img src="resources/knowledge/space-shutters/space-shutter-placeholder.jpg" alt="Zdjęcie wahadłowca" class="photo">
+                </div>
+            </div>
+        </div>
+    </section>
     <footer class="footer">
         <ul>
             <li>Skontaktuj się z nami:</li></br>
