@@ -17,9 +17,7 @@ for (var i = 0; i < btns.length; i++) {
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("knowledge-element");
-  console.log('Test1:' + getCookie('category'));
   setCookie('category', c, 1);
-  console.log('Test2:' + getCookie('category'));
   if (c == "all") c = "";
   for (i = 0; i < x.length; i++) {
     removeClass(x[i], "show");
