@@ -1,11 +1,23 @@
-filterSelection(getCookie('category'))
+var category_cookie = getCookie('category');
+filterSelection(getCookie(category_cookie))
+var btnContainer = document.getElementById("buttonContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+var curBtn = document.getElementById("btn-"+category_cookie);
+curBtn.className += " active";
+
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function () {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
 
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("knowledge-element");
   setCookie('category', c, 1);
-  console.log('Test1: ' + c);
-  console.log('Test2: ' + getCookie('category'));
   if (c == "all") c = "";
   for (i = 0; i < x.length; i++) {
     removeClass(x[i], "show");
@@ -61,12 +73,3 @@ function removeClass(element, name) {
   element.className = arr1.join(" ");
 }
 
-var btnContainer = document.getElementById("buttonContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function () {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
