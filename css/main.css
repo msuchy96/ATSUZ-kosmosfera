@@ -5,13 +5,26 @@
     --semi-dark-color: #0a486b;
     --text-color-1: #65bce4;
     --text-color-2: #94d6f5;
+    --text-color-3: #deeef5;
     --hyperlink-color: #439467;
-    --h2-font-size: 1.25rem;
+    --h2-font-size: 1.5rem;
 }
 
 html {
     background-color: var(--dark-color);
     overflow-x: hidden;
+}
+
+.section-title {
+    position: relative;
+    font-size: var(--h2-font-size);
+    color: var(--text-color-1);
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', cursive;
+    animation: glow 2s ease-in-out infinite alternate;
 }
 
 body {
