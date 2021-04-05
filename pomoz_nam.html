@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +9,13 @@
     <meta name="author" content="Maciej Suchocki" />
     <title>Kosmosfera - Centrum Edukacyjne</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/pomoz_nam.css">
 </head>
+
 <body>
     <header>
         <a class href="index.html">
-            <img src="resources/cosmo-logo.png" alt="Logo Kosmosfera" class="logo"> 
+            <img src="resources/cosmo-logo.png" alt="Logo Kosmosfera" class="logo">
         </a>
         <div class="name-header">
             <h2> K O S M O S F E R A </h2>
@@ -34,13 +37,28 @@
         </nav>
     </header>
     <section id="help-us-patronite">
-        <h2 class="section-title">Zostań naszym Patronem!</h2>
+        <h2 class="section-title">Zostań naszym Patronem</h2>
+        <dev class="help-us-container">
+            <img class="help-us-img icon-small" src="resources/icons/patreon.svg" alt="Logo firmy Patreon">
+            <p class="help-us-desc">Możesz wybrać jeden z przedstawionych progów wsparcie w formie subskrypcyjnej ze współmiernymi benefitami w serwisie Patreon.</p>
+            <a href="https://www.patreon.com/" class="help-us-button">Przejdź do serwisu Patreon</a>
+        </dev>
     </section>
     <section id="help-us-bank">
-        <h2 class="section-title">Przelej nam datek!</h2>
+        <h2 class="section-title">Przelej nam datek</h2>
+        <dev class="help-us-container">
+            <img class="help-us-img" src="resources/icons/bank.svg" alt="Ikona portfela">
+            <p class="help-us-desc">Jeśli chcesz nas wesprzeć jednorazowo, również możesz to zrobić! Przyjmujemy przelewy na nasze konto bankowe.</p>
+            <a class="help-us-button" onclick="copyBankAccountNumber()">Skopiuj numer konta do schowka</a>
+        </dev>
     </section>
     <section id="help-us-volunteer">
-        <h2 class="section-title">Zaaplikuj do wolontariatu!</h2>
+        <h2 class="section-title">Zaaplikuj do wolontariatu</h2>
+        <dev class="help-us-container">
+            <img class="help-us-img form icon-small" src="resources/icons/formularz.svg" alt="Ikona formularza">
+            <p class="help-us-desc">Zapraszamy wszystkie osoby, które mają ochotę współpracować z nami na stałe poświęcając swój czas</p>
+            <a href="resources/formularz.pdf" class="help-us-button">Pobierz aplikacje w PDF</a>
+        </dev>
     </section>
     <footer class="footer">
         <ul>
