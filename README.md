@@ -1,4 +1,6 @@
 # ATSUZ-kosmosfera
+Projekt strony na zaliczenie przedmiotu Architektury i technologie systemów internetowych
+Strona dostępna pod adresem: https://msuchy96.github.io/ATSUZ-kosmosfera/
 
 Ikony pochodzą ze strony https://freeicons.io/</br>
 </br>
