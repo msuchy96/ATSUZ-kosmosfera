@@ -1,0 +1,29 @@
+.help-us-img {
+    width: 20%;
+}
+
+.icon-small {
+    margin-bottom: 2%;
+}
+
+.help-us-container {
+    color: var(--text-color-2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 15%;
+}
+
+section {
+    margin-top: 50%;
+    margin-bottom: 50%;
+}
+
+@media only screen and (min-width: 1024px) {
+    section {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+}
