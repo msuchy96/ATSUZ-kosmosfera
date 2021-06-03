@@ -2,6 +2,8 @@
 Website for Architecture and Technlogies of Internet classes</br>
 https://msuchy96.github.io/ATSUZ-kosmosfera/
 
+Website had to be designed in polish.
+
 Icons sources https://freeicons.io/</br>
 </br>
 Photos Sources:</br>
