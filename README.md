@@ -1,10 +1,10 @@
 # ATSUZ-kosmosfera
-Projekt strony na zaliczenie przedmiotu Architektury i technologie systemów internetowych</br>
-Strona dostępna pod adresem: https://msuchy96.github.io/ATSUZ-kosmosfera/
+Website for Architecture and Technlogies of Internet classes</br>
+https://msuchy96.github.io/ATSUZ-kosmosfera/
 
-Ikony pochodzą ze strony https://freeicons.io/</br>
+Icons sources https://freeicons.io/</br>
 </br>
-Zdjęcia:</br>
+Photos Sources:</br>
 Centrum Naukowe - https://unsplash.com/photos/sa-4vtGmIzQ</br>
 Planeta placeholder - https://unsplash.com/photos/m35LirqP6y8</br>
 Satelita placeholder - https://unsplash.com/photos/EOQFwqmzfeY</br>
